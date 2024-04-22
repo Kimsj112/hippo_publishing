@@ -187,16 +187,21 @@ a{
 }
 
 .feed_contentbox{
-    width: 80%px;
     height: 100%;
-    margin: 0px auto;
+    margin: 0px 25px;
     float: none;
+    display: flex;
+    justify-content: center;
 }
 
 .feed_contentlayer{
     height: 100%;
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0px, 1fr));
+    gap: 2px;
     justify-content: center;
 }
 
@@ -207,7 +212,7 @@ a{
 }
 
 .feed_contentlayer > div > a > img{
-    width: 400px;
+    width: 350px;
     height: 295px;
     padding: 30px;
     display: flex;
