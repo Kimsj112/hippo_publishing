@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>히포북</title>
-    <link rel="stylesheet" href="/css/searchpage.css">
-    <script defer src="/js/search.js"></script>
+    <link rel="stylesheet" href="/css/writepage.css">
+
 </head>
 <body>
     <header>
@@ -57,9 +57,67 @@
 
     <main>
        
+        <div class="write_container">
+            <div class="write_inner">
+                <div class="write_wrap">
+                    <h1 class="write_title">글쓰기</h1>
+                    <form id="write_textframe" class="write_textframe">
+                        <div class="write_textwrap">
+                            <div class="write_kind">
+                            <input type="checkbox" id="post_checkbox" name="post_checkbox">
+                            <label for="post_checkbox">포스트</label><br>
+                            <input type="checkbox" id="review_checkbox" name="review_checkbox">
+                            <label for="review_checkbox">독후감</label><br>
+                            <input type="checkbox" id="oneline_checkbox" name="oneline_checkbox">
+                            <label for="oneline_checkbox">한 줄 리뷰</label><br>
+                            </div>
+                        
+                        <div class="write_datebox">
+                            <input type="date">
+                        </div>
+                        
+                        <div class="write_titlebox">
+                            <input type="text" id="Title" name="Title" value="" class="board_title_input" placeholder="제목을 입력해주세요." style="width: 550px;">
+                        </div>
+                    </div>
+                    </form>
+                    <div class="write_formbox">
+                        <div class="write_form_wrap">
+                        <div class="write_selectbar">
+                        <div class="write_selectbox">
+                            <div class="write_font">
+                                <a title="크기"><strong></strong></a>
+                                <a title="굵게"><strong></strong></a>
+                                <a title="기울임"><strong></strong></a>
+                                <a title="밑줄"><strong></strong></a>
+                                <a title="글자색"><strong></strong></a>
+                                <a title="글자배경색"><strong></strong></a>
+                            </div>
+                            <div class="write_positionbox">
+                                    <a title="왼쪽"><strong></strong></a>
+                                    <a title="가운데"><strong></strong></a>
+                                    <a title="오른쪽"><strong></strong></a>
+                            </div>
+                            <div class="write_imgbox">
+                                <span style="color: blue;">이미지 선택 : </span>
+                                <input type="file">
+                            </div>
+                        </div>
+                        </div>
+                        <div class="write_contentbox">
+                            <textarea name="write_content" id="write_content" cols="145" rows="100"></textarea>
+                        </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
 
-      
-        
+        <ul class="write_bar-x">
+            <a href="" class="write_canclebar">취소</a>
+            <a href="" class="write_submitbar">등록</a>
+        </ul>
+ 
     </main>
 </body>
 </html>
